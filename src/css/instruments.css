@@ -1,6 +1,6 @@
 .instruments-section-wrapper{
     width: 1200px;
-    padding-top: 80px;
+    padding-top: 20px;
     padding-bottom: 60px;
 }
 
@@ -9,7 +9,8 @@
     justify-content: space-between;
     margin-top: 40px;
 }
-.instruments-list p {
+.instruments-list p, .instruments-list a {
+    all: unset;
     border: 1px solid #E0D8CC;
     padding: 8px 32px 12px;
     gap: 8px;
@@ -22,15 +23,19 @@
     text-align: center;
 }
 
+.instruments-list a {
+    cursor: pointer;
+}
+
 .instruments-yellow {
-    background: #FFE77A;
+    background: #FFE77A !important;
 }
 .instruments-pink {
-    background: #FFDEE2;
+    background: #FFDEE2 !important;;
 }
 .instruments-green {
-    background: #E0F29C;
+    background: #E0F29C !important;;
 }
 .instruments-blue {
-    background: #ADCAE4;
+    background: #ADCAE4 !important;;
 }

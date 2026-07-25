@@ -4,8 +4,14 @@ import './css/hero-section.css'
 import './css/learn-projects.css'
 import './css/thinking.css'
 import './css/instruments.css'
+import './css/philosophy.css'
 import './css/buttons.css'
 import {createThinkingCard} from "./thinking-card-template.js";
+import {createPhilosophyCard} from "./philosophy-card-template.js";
+
+
+const resumeBtn = document.querySelector('#resume-btn');
+resumeBtn.addEventListener('pointerup', () => window.open('./resume.pdf', '_blank'));
 
 
 const cardWrapper = document.querySelector('.thinking-section-wrapper');
@@ -72,9 +78,44 @@ const descriptors = [
         angle: 0
     }
 ].reverse();
-
 descriptors.forEach(descriptor => createThinkingCard(cardWrapper, descriptor));
 
 
-const resumeBtn = document.querySelector('#resume-btn');
-resumeBtn.addEventListener('pointerup', () => window.open('./resume.pdf', '_blank'));
+
+const philosophyCardDescriptors = [
+    {
+        id: 1,
+        text: 'Це не про сумніви.',
+        position: {
+            left: 22,
+            top: 120,
+        },
+    },
+    {
+        id: 2,
+        text: 'Це про цікавість.',
+        position: {
+            left: 180,
+            top: 70,
+        },
+    },
+    {
+        id: 3,
+        text: 'Це про те, щоб побачити ціле.',
+        position: {
+            left: 390,
+            top: 100,
+        },
+    },
+    {
+        id: 4,
+        text: 'Це про деталі, що створюють довіру.',
+        position: {
+            left: 570,
+            top: 60,
+        },
+    }
+]
+
+const philosophyCardWrapper = document.querySelector('.philosophy-wrapper');
+philosophyCardDescriptors.forEach(descriptor => createPhilosophyCard(philosophyCardWrapper, descriptor));

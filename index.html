@@ -10,9 +10,13 @@
 <div class="main-wrapper">
     <div class="main-content">
         <header class="main-header">
-            <button class="primary primary-yellow">Кейси</button>
-            <button class="primary primary-pink">Резюме</button>
-            <button class="primary primary-green">Звʼязатися</button>
+            <a href="#learn-header">
+                <button class="primary primary-yellow">Кейси</button>
+            </a>
+            <button id="resume-btn" class="primary primary-pink">Резюме</button>
+            <a href="mailto:olenaahiienko@gmail.com">
+                <button class="primary primary-green">Звʼязатися</button>
+            </a>
         </header>
         <section class="hero-section-wrapper">
             <div class="hero-section">
@@ -20,13 +24,16 @@
                     <h1>ОЛЕНА</h1>
                     <h1>АГІЄНКО</h1>
                     <p>UI/UX designer</p>
-                    <button class="hero-section-button">
-                        Зазирни в мої думки
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M2.50488 9H17.4946M13.3267 12.5L17.4946 9L13.3267 5.5" stroke="#1A1712"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <a href="#thinking-h2">
+                        <button class="hero-section-button">
+                            Зазирни в мої думки
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M2.50488 9H17.4946M13.3267 12.5L17.4946 9L13.3267 5.5" stroke="#1A1712"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </a>
+
                 </div>
                 <div class="hero-section-right">
                     <img src="./bg_photo.png" alt="" class="hero-section-right-bg-photo"/>
@@ -38,39 +45,64 @@
             </div>
         </section>
         <section class="learn-projects-wrapper">
-            <h2 class="learn-projects-header">Проекти, які мене навчили</h2>
+            <h2 id="learn-header" class="section-header">Проекти, які мене навчили</h2>
             <div class="learn-projects-card">
                 <a target="_blank" class="learn-projects-card-header"
                    href="https://www.figma.com/design/DXl30hqz0p6czuZja7ECA3/Drift-Aegean?node-id=0-1&p=f&t=M3gE4ik2z9SvBlqu-0"
                 >
-                    Grotti - e-commerce інтернет-магазин
+                    Grotti &ndash; e-commerce інтернет-магазин
                 </a>
                 <div class="learn-projects-card-img-wrapper">
-                    <img src="./learn-project-scotch.png" alt="" class="learn-projects-card-scotch">
+                    <svg class="learn-projects-card-scotch" xmlns="http://www.w3.org/2000/svg" width="600" height="39" viewBox="0 0 600 39" fill="none">
+                        <path d="M11 4.15254L8 0L591 0.553672L596.5 4.42938L588 15.7797L599.5 26.5763L588 38.7571L8 37.3729L0 20.4859L11 4.15254Z" fill="#DDDAD0" fill-opacity="0.9"/>
+                        <path d="M11 4.15254L8 0L591 0.553672L596.5 4.42938L588 15.7797L599.5 26.5763L588 38.7571L8 37.3729L0 20.4859L11 4.15254Z" fill="url(#paint0_linear_193_1069)" fill-opacity="0.1" style="mix-blend-mode:multiply"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_193_1069" x1="299.75" y1="0" x2="299.75" y2="38.7571" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.213542" stop-color="white"/>
+                                <stop offset="0.5"/>
+                                <stop offset="1" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
                     <a  target="_blank"
                         href="https://www.figma.com/design/DXl30hqz0p6czuZja7ECA3/Drift-Aegean?node-id=0-1&p=f&t=M3gE4ik2z9SvBlqu-0"
                     >
                         <img src="./grotti-img.png" alt="photo" class="learn-projects-card-img">
+                        <div class="learn-project-overlay"></div>
                     </a>
-                    <div class="learn-project-overlay"></div>
+
                 </div>
             </div>
             <div class="learn-projects-card">
                 <a target="_blank" class="learn-projects-card-header"
                    href="https://www.figma.com/design/UJUGWwkrrT1CIBn5sc3E96/e-commerc-Grotti-one-ref-animate?node-id=0-1&p=f&t=fHr4nV9Pt8AQAYmk-0"
                 >
-                    AegeanDrift - лендінг яхтового туризму
+                    AegeanDrift &ndash; лендінг яхтового туризму
                 </a>
                 <div class="learn-projects-card-img-wrapper">
-                    <img src="./learn-project-scotch.png" alt="" class="learn-projects-card-scotch">
+                    <svg class="learn-projects-card-scotch" xmlns="http://www.w3.org/2000/svg" width="600" height="39" viewBox="0 0 600 39" fill="none">
+                        <path d="M11 4.15254L8 0L591 0.553672L596.5 4.42938L588 15.7797L599.5 26.5763L588 38.7571L8 37.3729L0 20.4859L11 4.15254Z" fill="#DDDAD0" fill-opacity="0.9"/>
+                        <path d="M11 4.15254L8 0L591 0.553672L596.5 4.42938L588 15.7797L599.5 26.5763L588 38.7571L8 37.3729L0 20.4859L11 4.15254Z" fill="url(#paint0_linear_193_1069)" fill-opacity="0.1" style="mix-blend-mode:multiply"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_193_1069" x1="299.75" y1="0" x2="299.75" y2="38.7571" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.213542" stop-color="white"/>
+                                <stop offset="0.5"/>
+                                <stop offset="1" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
                     <a  target="_blank"
                         href="https://www.figma.com/design/UJUGWwkrrT1CIBn5sc3E96/e-commerc-Grotti-one-ref-animate?node-id=0-1&p=f&t=fHr4nV9Pt8AQAYmk-0"
                     >
                         <img src="./aegean-drift-img.png" alt="photo" class="learn-projects-card-img">
+                        <div class="learn-project-overlay"></div>
                     </a>
-                    <div class="learn-project-overlay"></div>
+
                 </div>
             </div>
+        </section>
+        <section class="thinking-section-wrapper">
+            <h2 id="thinking-h2" class="section-header">Як я думаю</h2>
         </section>
     </div>
 </div>

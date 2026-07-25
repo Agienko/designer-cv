@@ -1,0 +1,75 @@
+.thinking-section-wrapper {
+    width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    height: 816px;
+    position: relative;
+}
+
+.thinking-card-wrapper {
+    width: 430px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transition: scale 1.2s ease;
+}
+
+.thinking-card-wrapper:hover {
+    scale: 1.05;
+}
+
+
+.thinking-card-scotch {
+
+}
+
+.thinking-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 402px;
+    box-shadow: -11px 20px 22px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: box-shadow 0.2s ease;
+
+}
+.thinking-card:hover {
+    box-shadow: -11px 20px 22px 0 rgba(0, 0, 0, 0.5);
+}
+
+.thinking-card-scotch {
+    margin-left: 172px;
+    transform: translateY(24px);
+}
+
+.thinking-card-img{
+    width: 384px;
+    height: 314px;
+    margin: 24px 24px 12px;
+
+}
+
+.thinking-card-footer {
+    font-family: DM Sans, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    /*gap: 8px;*/
+    height: 56px;
+}
+
+.thinking-card-footer svg {
+    margin-left: 8px;
+    display: block;
+}
+
+
+

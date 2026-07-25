@@ -11,6 +11,9 @@
     max-width: 588px;
     flex: 1;
 }
+.hero-section-left a{
+    all: unset;
+}
 
 .hero-section-left h1 {
     font-family: Bebas Neue, Arial, sans-serif;

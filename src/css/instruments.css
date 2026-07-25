@@ -39,3 +39,21 @@
 .instruments-blue {
     background: #ADCAE4 !important;;
 }
+
+@media (max-width: 1200px) {
+    .instruments-section-wrapper {
+        max-width: 920px;
+        padding-bottom: 36px;
+    }
+
+    .instruments-list {
+        margin-top: 24px;
+    }
+
+    .instruments-list p, .instruments-list a {
+
+        padding: 8px 20px 12px;
+        font-size: 15px;
+        line-height: 130%;
+    }
+}

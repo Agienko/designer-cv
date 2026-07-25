@@ -82,6 +82,9 @@ descriptors.forEach(descriptor => createThinkingCard(cardWrapper, descriptor));
 
 
 
+
+
+
 const philosophyCardDescriptors = [
     {
         id: 1,

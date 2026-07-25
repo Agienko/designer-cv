@@ -21,11 +21,6 @@
     scale: 1.05;
 }
 
-
-.thinking-card-scotch {
-
-}
-
 .thinking-card {
     display: flex;
     flex-direction: column;
@@ -74,3 +69,33 @@
 
 
 
+@media (max-width: 1200px) {
+    .thinking-section-wrapper {
+        width: 920px;
+        height: 674px;
+    }
+
+    .thinking-card-wrapper {
+        width: 350px;
+        height: 420px;
+        margin-top: -120px;
+    }
+
+    .thinking-card {
+        width: 350px;
+        height: 326px;
+        box-shadow: -8px 17px 18px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .thinking-card-img{
+        width: 312px;
+        height: 256px;
+        margin: 18px 18px 8px;
+
+    }
+
+    .thinking-card-scotch {
+        margin-left: 140px;
+        transform: translateY(18px);
+    }
+}

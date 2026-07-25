@@ -8,10 +8,20 @@ export const createThinkingCard = (stage, descriptor) => {
     }, {passive: true})
 
 
+    const resizeObserver = new ResizeObserver((entries) => {
+
+        const realWidth = entries[0].contentRect.width;
+        const multiplier = realWidth / 1200;
+        card.style.left = `${multiplier * descriptor.position.left}px`;
+        card.style.top = `${multiplier * descriptor.position.top}px`;
+    });
+
+    resizeObserver.observe(stage);
+
+
 
     card.classList.add('thinking-card-wrapper');
-    card.style.left = `${descriptor.position.left}px`;
-    card.style.top = `${descriptor.position.top}px`;
+
     card.style.transform = `rotate(${descriptor.angle}deg)`;
     card.innerHTML = `
         <svg class="thinking-card-scotch" xmlns="http://www.w3.org/2000/svg" width="64" height="77" viewBox="0 0 64 77" fill="none">

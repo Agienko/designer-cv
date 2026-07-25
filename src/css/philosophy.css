@@ -9,12 +9,9 @@
     position: absolute;
 }
 
-.philosophy-card p{
-    position: absolute;
-    /*text-align: center;*/
-    /*left: 0;*/
-    text-align: center;
-    top: 50px;
-    left: 30px;
-    max-width: 200px;
+@media (max-width: 1200px) {
+    .philosophy-wrapper {
+        width: 920px;
+        height: 336px;
+    }
 }

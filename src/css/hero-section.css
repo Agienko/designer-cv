@@ -45,7 +45,7 @@
     position: absolute;
     width: 710px;
     height: 620px;
-    top: -120px;
+    top: -110px;
     left: -10px;
 }
 
@@ -53,13 +53,13 @@
     position: absolute;
     width: 584px;
     height: 608px;
-    top: -120px;
+    top: -110px;
     left: 80px;
 }
 .hero-section-text{
     position: absolute;
     max-width: 230px;
-    top: 50px;
+    top: 60px;
     left: 50px;
     transform: rotate(-8deg);
 }

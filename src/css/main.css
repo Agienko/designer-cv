@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-}
 
 body{
   color: #1A1712;
@@ -23,7 +20,7 @@ body::before {
   background-repeat: no-repeat;
   background-color: #FAF7F2;
   mix-blend-mode: soft-light;
-  opacity: 0.5;
+  opacity: 0.42;
 }
 .main-wrapper {
   width: 100%;
@@ -33,7 +30,7 @@ body::before {
   margin: 0 auto;
 }
 
-.main-content header {
+.main-content .main-header {
   width: 1200px;
   display: flex;
   justify-content: space-between;

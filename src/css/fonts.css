@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("./DMSans-VariableFont_opsz,wght.ttf") format("ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("./BebasNeue-Regular.ttf") format("ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("./CormorantGaramond-VariableFont_wght.ttf") format("ttf");
+    font-style: normal;
+}

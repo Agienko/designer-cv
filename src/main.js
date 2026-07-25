@@ -3,6 +3,7 @@ import './css/main.css'
 import './css/hero-section.css'
 import './css/learn-projects.css'
 import './css/thinking.css'
+import './css/instruments.css'
 import './css/buttons.css'
 import {createThinkingCard} from "./thinking-card-template.js";
 

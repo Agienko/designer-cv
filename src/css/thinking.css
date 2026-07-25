@@ -1,6 +1,6 @@
 .thinking-section-wrapper {
     width: 1200px;
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 60px;
     height: 816px;
     position: relative;
@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    transition: scale 1.2s ease;
+    transition: scale 1s ease;
 }
 
 .thinking-card-wrapper:hover {

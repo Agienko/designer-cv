@@ -11,6 +11,12 @@
     letter-spacing: 0;
     text-align: center;
     z-index: 1;
+    transition: color 0.2s ease-in-out;
+}
+.primary:hover {
+    color: #6B6055;
+}
+.primary:active {
 }
 
 .primary-yellow {
@@ -41,6 +47,14 @@
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 12%;
+    transition: background 0.15s ease-in-out;
+}
+
+.hero-section-button:hover{
+    background: #62A334;
+}
+.hero-section-button:active{
+    background: #2D5016;
 }
 
 @media (max-width: 960px) {

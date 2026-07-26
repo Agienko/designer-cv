@@ -67,7 +67,6 @@
         transform: scale(0.7);
     }
 
-
     .philosophy-card-1{
         left: -30px;
         top: 40px;
@@ -84,5 +83,37 @@
     .philosophy-card-4{
         left: 270px;
         top: -5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .philosophy-wrapper {
+        width: 320px;
+        height: 320px;
+    }
+    .philosophy-card {
+        transform: scale(0.7);
+    }
+
+    .philosophy-card-1{
+        left: 0;
+        top: 40px;
+    }
+    .philosophy-card-2{
+        left: 100px;
+        top: -4px;
+        z-index: 2;
+    }
+    .philosophy-card-3{
+        left: 0;
+        top: 110px;
+        z-index: 4;
+        transform: scale(0.7) rotate(-20deg);
+    }
+    .philosophy-card-4{
+        left: 140px;
+        top: 110px;
+        z-index: 1;
+        transform: scale(0.7) rotate(50deg);
     }
 }

@@ -63,3 +63,24 @@
         line-height: 130%;
     }
 }
+
+@media (max-width: 480px) {
+    .hero-section-button{
+        padding: 8px 18px 10px;
+        gap: 4px;
+        font-size: 12px;
+        width: 260px;
+        height: 36px;
+        position: absolute;
+        line-height: 80%;
+        font-weight: 300;
+        border-radius: 30px;
+        /*border: 1px #E0D8CC solid;*/
+    }
+    .primary {
+        padding: 8px 20px 10px;
+        gap: 4px;
+        font-size: 14px;
+        line-height: 100%;
+    }
+}

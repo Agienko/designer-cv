@@ -262,7 +262,7 @@
     .thinking-card-2 {
         left: 240px;
         top: 90px;
-        transform: rotate(4deg);
+        transform: rotate(8deg);
     }
     .thinking-card-3{
         left: 30px;
@@ -282,6 +282,69 @@
     .thinking-card-6{
         left: 240px;
         top: 420px;
+        transform: rotate(8deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .thinking-section-wrapper {
+        width: 360px;
+        height: 720px;
+    }
+
+    .thinking-card-wrapper {
+        width: 220px;
+        height: 240px;
+        margin-top: -20px;
+    }
+
+    .thinking-card {
+        width: 220px;
+        height: 210px;
+        box-shadow: -6px 10px 12px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .thinking-card-img{
+        width: 196px;
+        height: 164px;
+        margin: 12px 12px 6px;
+    }
+
+    .thinking-card-scotch {
+        margin-left: 80px;
+        margin-top: -18px;
+        /*transform: translateY(18px);*/
+    }
+
+
+    .thinking-card-1 {
+        left: 30px;
+        top: 50px;
+        transform: rotate(-8deg);
+    }
+    .thinking-card-2 {
+        left: 120px;
+        top: 140px;
+        transform: rotate(8deg);
+    }
+    .thinking-card-3{
+        left: 30px;
+        top: 230px;
+        transform: rotate(-8deg);
+    }
+    .thinking-card-4{
+        left: 120px;
+        top: 320px;
+        transform: rotate(8deg);
+    }
+    .thinking-card-5{
+        left: 30px;
+        top: 410px;
+        transform: rotate(-8deg);
+    }
+    .thinking-card-6{
+        left: 120px;
+        top: 500px;
         transform: rotate(8deg);
     }
 }

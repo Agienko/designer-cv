@@ -129,3 +129,29 @@
         margin-top: 18px;
     }
 }
+
+@media (max-width: 480px) {
+    .learn-projects-wrapper {
+        max-width: 360px;
+        padding-top: 0px;
+        padding-bottom: 24px;
+        gap: 12px;
+    }
+
+    .learn-projects-card-header{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 100%;
+        padding-top: 4px;
+    }
+
+    .learn-projects-card-scotch{
+        width: 160px;
+        top: 12px;
+        left: 90px;
+    }
+
+    .learn-projects-card-img{
+        margin-top: 18px;
+    }
+}

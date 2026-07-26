@@ -41,6 +41,10 @@
     background: #ADCAE4 !important;;
 }
 
+.instruments-purple {
+    background: #D0D4FC !important;;
+}
+
 @media (max-width: 1200px) {
     .instruments-section-wrapper {
         max-width: 960px;

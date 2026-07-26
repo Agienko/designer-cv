@@ -1,6 +1,7 @@
+import gsap from "gsap";
+
+
 export const createThinkingCard = (stage, descriptor) => {
-
-
     const card = document.createElement('div');
 
     card.classList.add(`thinking-card-wrapper`);
@@ -19,10 +20,10 @@ export const createThinkingCard = (stage, descriptor) => {
                         </linearGradient>
                     </defs>
                 </svg>
-                <div class="thinking-card" style="background-color: ${descriptor.color}">
+                <div class="thinking-card">
                     <img src="./thinking-cards/thinking-card-img-${descriptor.id}.png" alt="photo" class="thinking-card-img">
                     <div class="thinking-card-footer">
-                        <span>${descriptor.text}</span>
+                        <span></span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M2.50488 9H17.4946M13.3267 12.5L17.4946 9L13.3267 5.5" stroke="#1A1712" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -30,33 +31,57 @@ export const createThinkingCard = (stage, descriptor) => {
                 </div>
     `
     card._descriptor = descriptor;
+    card.tween = null;
+    card.thinkingCard = card.querySelector('.thinking-card');
+    card.thinkingCard.style.backgroundColor = card._descriptor.color;
     card.textSpan = card.querySelector('.thinking-card-footer span');
+    card.textSpan.textContent = card._descriptor.text;
     card.svg = card.querySelector('.thinking-card-footer svg');
     stage.appendChild(card);
 
-    const update = () => {
+    const setDefault = (skipCard) => {
         for (const child of stage.children) {
-            if(!child.classList.contains('thinking-card-wrapper')) continue;
+            if(!child.classList.contains('thinking-card-wrapper')|| skipCard === child) continue;
+            child?.tween?.kill();
+            child.tween = null;
             child.textSpan.textContent = child._descriptor.text;
             child.svg.style.transform = 'rotate(0deg)';
+            child.thinkingCard.style.backgroundColor = child._descriptor.color;
         }
     }
 
     const set = () => {
-        card.textSpan.textContent = descriptor.hoverText;
         card.svg.style.transform = 'rotate(180deg)';
         if(stage.lastChild !== card) stage.appendChild(card);
+        card.thinkingCard.style.backgroundColor = card._descriptor.hoverColor;
+        if(card.tween || card.textSpan.textContent === descriptor.hoverText) return;
+
+        const obj = { length: 0 };
+        card?.tween?.kill();
+        card.tween = gsap.to(obj, {
+            length: descriptor.hoverText.length,
+            duration: descriptor.hoverText.length * 0.03,
+            ease: "none",
+            roundProps: "length",
+            onUpdate() {
+                card.textSpan.textContent = descriptor.hoverText.slice(0, obj.length);
+            },
+            onComplete() {
+                card.tween = null;
+            }
+        });
+
     }
 
-    card.addEventListener('mouseover', () => {
-        update()
+    card.addEventListener('mouseover', e => {
+        setDefault(card)
         set()
     })
 
-    card.addEventListener('mouseleave', update)
+    card.addEventListener('mouseleave', setDefault)
 
     card.addEventListener('touchstart', () => {
-        update()
+        setDefault(card)
         set()
     })
 

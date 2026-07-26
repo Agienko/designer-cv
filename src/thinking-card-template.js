@@ -3,24 +3,13 @@ export const createThinkingCard = (stage, descriptor) => {
 
     const card = document.createElement('div');
 
+
     card.addEventListener('pointerover', () => {
         if(stage.lastElementChild !== card) stage.appendChild(card);
     }, {passive: true})
 
-
-    const resizeObserver = new ResizeObserver((entries) => {
-
-        const realWidth = entries[0].contentRect.width;
-        const multiplier = realWidth / 1200;
-        card.style.left = `${multiplier * descriptor.position.left}px`;
-        card.style.top = `${multiplier * descriptor.position.top}px`;
-    });
-
-    resizeObserver.observe(stage);
-
-
-
-    card.classList.add('thinking-card-wrapper');
+    card.classList.add(`thinking-card-wrapper`);
+    card.classList.add(`thinking-card-${descriptor.id}`);
 
     card.style.transform = `rotate(${descriptor.angle}deg)`;
     card.innerHTML = `

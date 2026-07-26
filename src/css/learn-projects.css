@@ -82,7 +82,7 @@
 @media (max-width: 960px) {
     .learn-projects-wrapper {
         max-width: 728px;
-        padding-top: 32px;
+        padding-top: 28px;
         padding-bottom: 48px;
         gap: 12px;
     }
@@ -101,5 +101,31 @@
 
     .learn-projects-card-img{
         margin-top: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .learn-projects-wrapper {
+        max-width: 480px;
+        padding-top: 0px;
+        padding-bottom: 32px;
+        gap: 12px;
+    }
+
+    .learn-projects-card-header{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 100%;
+        padding-top: 4px;
+    }
+
+    .learn-projects-card-scotch{
+        width: 220px;
+        top: 12px;
+        left: 128px;
+    }
+
+    .learn-projects-card-img{
+        margin-top: 18px;
     }
 }

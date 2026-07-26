@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    width: 960px;
 }
 .instruments-list p, .instruments-list a {
     all: unset;
@@ -42,12 +43,32 @@
 
 @media (max-width: 1200px) {
     .instruments-section-wrapper {
-        max-width: 920px;
+        max-width: 960px;
         padding-bottom: 36px;
     }
 
     .instruments-list {
         margin-top: 24px;
+        width: 720px;
+    }
+
+    .instruments-list p, .instruments-list a {
+
+        padding: 8px 20px 10px;
+        font-size: 15px;
+        line-height: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .instruments-section-wrapper {
+        max-width: 768px;
+        padding-bottom: 18px;
+    }
+
+    .instruments-list {
+        margin-top: 12px;
+        /*width: 480px;*/
     }
 
     .instruments-list p, .instruments-list a {
@@ -58,20 +79,25 @@
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
     .instruments-section-wrapper {
-        max-width: 728px;
+        max-width: 480px;
         padding-bottom: 18px;
     }
 
     .instruments-list {
+        max-width: 480px;
         margin-top: 12px;
+        justify-content: normal;
+        flex-wrap: wrap;
+        gap: 16px;
     }
 
     .instruments-list p, .instruments-list a {
 
-        padding: 8px 20px 12px;
+        padding: 8px 20px 10px;
         font-size: 15px;
-        line-height: 130%;
+        font-weight: 300;
+        line-height: 100%;
     }
 }

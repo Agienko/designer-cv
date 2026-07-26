@@ -20,62 +20,32 @@ const descriptors = [
     {
         id: 1,
         text: 'удосконалюю',
-        color: "#E0F29C",
-        position: {
-            left: 400,
-            top: 100,
-        },
-        angle: 0
+        color: "#E0F29C"
     },
     {
         id: 2,
         text: 'перевіряю',
         color: "#D0D4FC",
-        position: {
-            left: 710,
-            top: 140,
-        },
-        angle: 8
     },
     {
         id: 3,
         text: 'я вивчаю',
         color: "#ADCAE4",
-        position: {
-            left: 22,
-            top: 150,
-        },
-        angle: -8
     },
     {
         id: 4,
         text: 'переробляю',
         color: "#FFE77A",
-        position: {
-            left: 730,
-            top: 300,
-        },
-        angle: 8
     },
     {
         id: 5,
         text: 'сумніваюся',
-        color: "#FFE77A",
-        position: {
-            left: 22,
-            top: 300,
-        },
-        angle: -8
+        color: "#FFE77A"
     },
     {
         id: 6,
         text: 'розумію',
-        color: "#FFDEE2",
-        position: {
-            left: 400,
-            top: 370,
-        },
-        angle: 0
+        color: "#FFDEE2"
     }
 ].reverse();
 descriptors.forEach(descriptor => createThinkingCard(cardWrapper, descriptor));

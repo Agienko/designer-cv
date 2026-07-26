@@ -80,7 +80,6 @@ body::before {
 
   .main-content .main-header {
     width: 920px;
-    display: flex;
   }
 
   .section-header {
@@ -102,7 +101,6 @@ body::before {
 
   .main-content .main-header {
     width: 728px;
-    display: flex;
   }
 
   .section-header {
@@ -114,5 +112,27 @@ body::before {
 
   .contacts-wrapper{
     height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    width: 480px;
+  }
+
+  .main-content .main-header {
+    width: 440px;
+  }
+
+  .section-header {
+    font-family: DM Sans, sans-serif, serif;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 300;
+    padding: 8px 20px 10px;
+  }
+
+  .contacts-wrapper{
+    height: 126px;
   }
 }

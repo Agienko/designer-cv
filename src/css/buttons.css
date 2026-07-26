@@ -24,8 +24,8 @@
 }
 
 .hero-section-button{
-    width: 324px;
-    height: 56px;
+    /*width: 324px;*/
+    /*height: 56px;*/
     border-radius: 100px;
     border: 2px #E0D8CC solid;
     padding: 16px 40px 20px;
@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
     cursor: pointer;
     color: #ffffff;
     font-family: DM Sans, sans-serif;
@@ -46,5 +47,19 @@
     .hero-section-button{
         padding: 12px 32px 16px;
         gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section-button{
+        padding: 8px 20px 12px;
+        gap: 4px;
+        font-size: 12px;
+    }
+    .primary {
+        padding: 8px 20px 10px;
+        gap: 4px;
+        font-size: 15px;
+        line-height: 130%;
     }
 }

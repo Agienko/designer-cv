@@ -57,3 +57,21 @@
         line-height: 130%;
     }
 }
+
+@media (max-width: 960px) {
+    .instruments-section-wrapper {
+        max-width: 728px;
+        padding-bottom: 18px;
+    }
+
+    .instruments-list {
+        margin-top: 12px;
+    }
+
+    .instruments-list p, .instruments-list a {
+
+        padding: 8px 20px 12px;
+        font-size: 15px;
+        line-height: 130%;
+    }
+}

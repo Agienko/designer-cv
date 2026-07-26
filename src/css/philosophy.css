@@ -15,3 +15,10 @@
         height: 336px;
     }
 }
+
+@media (max-width: 960px) {
+    .philosophy-wrapper {
+        width: 728px;
+        height: 336px;
+    }
+}

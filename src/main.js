@@ -9,13 +9,6 @@ import './css/buttons.css'
 import {createThinkingCard} from "./thinking-card-template.js";
 import {createPhilosophyCard} from "./philosophy-card-template.js";
 
-
-document.addEventListener('contextmenu', (event) => {
-    event.preventDefault();
-    return false;
-});
-
-
 const resumeBtn = document.querySelector('#resume-btn');
 resumeBtn.addEventListener('pointerup', () => window.open('./resume.pdf', '_blank'));
 

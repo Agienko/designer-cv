@@ -1,14 +1,14 @@
 @font-face {
     font-family: "DM Sans";
-    src: url("./fonts/DMSans.ttf") format("truetype");
+    src: url("../fonts/DMSans.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Bebas Neue";
-    src: url("./fonts/BebasNeue-Regular.ttf") format("truetype");
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Cormorant Garamond";
-    src: url("./fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
 }

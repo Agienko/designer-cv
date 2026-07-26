@@ -16,6 +16,13 @@ img {
   -webkit-user-select: none;
 }
 
+img {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
 body{
   color: #1A1712;
 }

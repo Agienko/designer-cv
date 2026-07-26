@@ -10,6 +10,12 @@ import {createThinkingCard} from "./thinking-card-template.js";
 import {createPhilosophyCard} from "./philosophy-card-template.js";
 
 
+document.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+    return false;
+});
+
+
 const resumeBtn = document.querySelector('#resume-btn');
 resumeBtn.addEventListener('pointerup', () => window.open('./resume.pdf', '_blank'));
 
@@ -20,31 +26,37 @@ const descriptors = [
     {
         id: 1,
         text: 'удосконалюю',
+        hoverText: 'Не боюся видаляти те, що сама ж і придумала',
         color: "#E0F29C"
     },
     {
         id: 2,
         text: 'перевіряю',
+        hoverText: 'Не сприймаю правки як особисту критику',
         color: "#D0D4FC",
     },
     {
         id: 3,
         text: 'я вивчаю',
+        hoverText: 'Малюю людину, а не абстрактного "користувача"',
         color: "#ADCAE4",
     },
     {
         id: 4,
         text: 'переробляю',
+        hoverText: 'Несу цей досвід у наступний проєкт',
         color: "#FFE77A",
     },
     {
         id: 5,
         text: 'сумніваюся',
+        hoverText: 'Даю собі право визнати, що варіант був сильнішим',
         color: "#FFE77A"
     },
     {
         id: 6,
         text: 'розумію',
+        hoverText: 'Відділяю "незручно мені" від "незручно користувачу"',
         color: "#FFDEE2"
     }
 ].reverse();

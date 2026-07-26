@@ -1,8 +1,8 @@
 .learn-projects-wrapper {
     max-width: 1200px;
     padding-top: 40px;
-    padding-bottom: 60px;
-    gap: 32px;
+    padding-bottom: 48px;
+    gap: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -26,12 +26,12 @@
     width: 600px;
     height: auto;
     position: absolute;
-    top: 24px;
+    top: 16px;
     left: 300px;
 }
 
 .learn-projects-card-img{
-    margin-top: 48px;
+    margin-top: 36px;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -58,8 +58,8 @@
     .learn-projects-wrapper {
         max-width: 920px;
         padding-top: 40px;
-        padding-bottom: 60px;
-        gap: 24px;
+        padding-bottom: 36px;
+        gap: 16px;
     }
 
     .learn-projects-card-header{
@@ -83,7 +83,7 @@
     .learn-projects-wrapper {
         max-width: 728px;
         padding-top: 28px;
-        padding-bottom: 48px;
+        padding-bottom: 32px;
         gap: 12px;
     }
 
@@ -95,12 +95,12 @@
     .learn-projects-card-scotch{
         width: 360px;
 
-        top: 16px;
+        top: 6px;
         left: 174px;
     }
 
     .learn-projects-card-img{
-        margin-top: 32px;
+        margin-top: 18px;
     }
 }
 
@@ -108,7 +108,7 @@
     .learn-projects-wrapper {
         max-width: 480px;
         padding-top: 0px;
-        padding-bottom: 32px;
+        padding-bottom: 18px;
         gap: 12px;
     }
 
@@ -121,12 +121,12 @@
 
     .learn-projects-card-scotch{
         width: 220px;
-        top: 12px;
+        top: 2px;
         left: 128px;
     }
 
     .learn-projects-card-img{
-        margin-top: 18px;
+        margin-top: 8px;
     }
 }
 
@@ -134,8 +134,8 @@
     .learn-projects-wrapper {
         max-width: 360px;
         padding-top: 0px;
-        padding-bottom: 24px;
-        gap: 12px;
+        padding-bottom: 18px;
+        gap: 8px;
     }
 
     .learn-projects-card-header{
@@ -147,11 +147,11 @@
 
     .learn-projects-card-scotch{
         width: 160px;
-        top: 12px;
+        top: 2px;
         left: 90px;
     }
 
     .learn-projects-card-img{
-        margin-top: 18px;
+        margin-top: 8px;
     }
 }

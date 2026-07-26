@@ -29,7 +29,7 @@
 @media (max-width: 1200px) {
     .philosophy-wrapper {
         width: 920px;
-        height: 336px;
+        height: 364px;
     }
 }
 
@@ -61,7 +61,7 @@
 @media (max-width: 768px) {
     .philosophy-wrapper {
         width: 480px;
-        height: 240px;
+        height: 236px;
     }
     .philosophy-card {
         transform: scale(0.7);

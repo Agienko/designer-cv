@@ -42,6 +42,9 @@
     letter-spacing: 12%;
 }
 
-/*@media (max-width: 1200px) {*/
-
-/*}*/
+@media (max-width: 960px) {
+    .hero-section-button{
+        padding: 12px 32px 16px;
+        gap: 8px;
+    }
+}

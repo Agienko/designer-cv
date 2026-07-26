@@ -14,15 +14,13 @@ img {
   -webkit-user-drag: none;
   user-select: none;
   -webkit-user-select: none;
-}
-
-img {
   -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;
-  user-select: none;
   pointer-events: none;
 }
 
+span {
+  display: inline-block;
+}
 body{
   color: #1A1712;
 }

@@ -6,14 +6,15 @@ import './css/thinking.css'
 import './css/instruments.css'
 import './css/philosophy.css'
 import './css/buttons.css'
+import './css/footer.css'
 import {createThinkingCard} from "./thinking-card-template.js";
 import {createPhilosophyCard} from "./philosophy-card-template.js";
 import gsap from "gsap";
 import {sorter} from "./helpers.js";
+import {intersectionElementsList} from "./intersection-elements-list.js";
 
 const resumeBtn = document.querySelector('#resume-btn');
 resumeBtn.addEventListener('pointerup', () => window.open('./resume.pdf', '_blank'));
-
 
 const cardWrapper = document.querySelector('.thinking-section-wrapper');
 const descriptors = [
@@ -85,79 +86,17 @@ const philosophyCardDescriptors = [
 const philosophyCardWrapper = document.querySelector('.philosophy-wrapper');
 philosophyCardDescriptors.forEach(descriptor => createPhilosophyCard(philosophyCardWrapper, descriptor));
 
-const elements = [
-    '.hero-section-left h1',
-    '.hero-section-left h1:last-of-type',
-    '.hero-section-left p',
-    '.hero-section-left p:nth-of-type(2)',
-    '.hero-section-left a button',
-
-    '.hero-section-right .hero-section-right-bg-photo',
-    '.hero-section-right .hero-section-right-photo',
-    '.hero-section-right .hero-section-text',
-
-    '.learn-projects-wrapper .section-header',
-    '.learn-projects-wrapper .learn-projects-card .learn-projects-card-header span',
-    '.learn-projects-wrapper .learn-projects-card .learn-projects-card-img-wrapper',
-
-    '.learn-projects-wrapper .learn-projects-card:last-of-type .learn-projects-card-header span',
-    '.learn-projects-wrapper .learn-projects-card:last-of-type .learn-projects-card-img-wrapper',
-
-    '.thinking-section-wrapper .section-header',
-    '.thinking-section-wrapper .thinking-card-wrapper',
-    '.thinking-section-wrapper .thinking-card-wrapper:nth-of-type(2)',
-    '.thinking-section-wrapper .thinking-card-wrapper:nth-of-type(3)',
-    '.thinking-section-wrapper .thinking-card-wrapper:nth-of-type(4)',
-    '.thinking-section-wrapper .thinking-card-wrapper:nth-of-type(5)',
-    '.thinking-section-wrapper .thinking-card-wrapper:nth-of-type(6)',
-
-    '.instruments-section-wrapper .section-header',
-    '.instruments-section-wrapper .instruments-list p',
-    '.instruments-section-wrapper .instruments-list p:nth-of-type(2)',
-    '.instruments-section-wrapper .instruments-list p:nth-of-type(3)',
-    '.instruments-section-wrapper .instruments-list p:nth-of-type(4)',
-   '.instruments-section-wrapper .instruments-list p:nth-of-type(5)',
-   '.instruments-section-wrapper .instruments-list p:nth-of-type(6)',
-    '.instruments-section-wrapper .instruments-list p:nth-of-type(7)',
-
-    '.philosophy-wrapper .section-header',
-    '.philosophy-wrapper .philosophy-card-wrapper',
-    '.philosophy-wrapper .philosophy-card-wrapper:nth-of-type(2)',
-    '.philosophy-wrapper .philosophy-card-wrapper:nth-of-type(3)',
-    '.philosophy-wrapper .philosophy-card-wrapper:nth-of-type(4)',
-
-    '.contacts-wrapper .section-header',
-    '.contacts-wrapper .instruments-list',
-
-].map(id => document.querySelector(id));
-
-
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry, i) => {
             const element = entry.target;
 
             if (entry.isIntersecting) {
-                gsap.to(element, {
-                    y: 0,
-                    scale: 1,
-                    opacity: 1,
-                    duration: 0.5,
-                    ease: "power4.out",
-                    overwrite: true,
-                });
-
+                gsap.to(element, {y: 0, scale: 1, opacity: 1, duration: 0.4, ease: "power3.out", overwrite: true});
             } else {
                 const direction = element.getBoundingClientRect().top > 0 ? 1 : -1;
-
-                gsap.to(element, {
-                    y: direction * 100,
-                    scale: 0.8,
-                    opacity: 0,
-                    duration: 0.3,
-                    ease: "power4.in",
-                    overwrite: true,
-                });
+                const y = direction * 100;
+                gsap.to(element, {y, scale: 0.8, opacity: 0, duration: 0.25, ease: "power3.in", overwrite: true});
             }
         });
     },
@@ -166,25 +105,16 @@ const observer = new IntersectionObserver(
     }
 );
 
-elements.forEach((element) => {
-    element.style.opacity = 0;
-    element.style.scale = 0.8;
+intersectionElementsList.forEach(id => {
+    const element = document.querySelector(id);
+    element.style.opacity = '0';
+    element.style.scale = '0.8';
     observer.observe(element)
 });
 
-
-
 const mainPhoto = document.querySelector('.hero-section-right .hero-section-right-photo')
-
-
 window.addEventListener("pointermove", (e) => {
     const x = (e.clientX / window.innerWidth - 0.5) * 2;
     const y = (e.clientY / window.innerHeight - 0.5) * 2;
-        gsap.to(mainPhoto, {
-            x: x * 3,
-            y: y * 3,
-            duration: 0.3,
-            ease: "power2.out",
-        });
-
+    gsap.to(mainPhoto, {x: x * 3, y: y * 3, duration: 0.3, ease: "power2.out"});
 });

@@ -1,0 +1,47 @@
+
+.contacts-wrapper .small-icons {
+    justify-content: space-between;
+
+    margin-top: 12px;
+    /*gap: 16px;*/
+    display: none;
+    width: 470px;
+}
+.small-icons a {
+    all: unset;
+    cursor: pointer;
+}
+
+.small-icons svg {
+    width: 56px;
+    height: 34px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.small-icons svg:hover{
+    transform: translateY(-4px) scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    .contacts-wrapper {
+        height: 120px;
+    }
+    .contacts-wrapper .instruments-list {
+        display: none;
+    }
+    .contacts-wrapper .small-icons {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacts-wrapper {
+        height: 120px;
+    }
+
+    .contacts-wrapper .small-icons {
+        display: flex;
+        max-width: 320px;
+    }
+}

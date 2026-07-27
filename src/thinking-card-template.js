@@ -21,7 +21,7 @@ export const createThinkingCard = (stage, descriptor) => {
                     </defs>
                 </svg>
                 <div class="thinking-card">
-                    <img src="./thinking-cards/thinking-card-img-${descriptor.id}.png" alt="photo" class="thinking-card-img">
+                    <img src="./thinking-cards/thinking-card-img-${descriptor.id}.webp" alt="photo" class="thinking-card-img">
                     <div class="thinking-card-footer">
                         <span></span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

@@ -7,6 +7,7 @@ export const intersectionElementsList = [
 
     '.hero-section-right .hero-section-right-bg-photo',
     '.hero-section-right .hero-section-right-photo',
+    '.hero-section-right svg',
     '.hero-section-right .hero-section-text',
 
     '.learn-projects-wrapper .section-header',

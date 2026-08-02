@@ -118,3 +118,8 @@ window.addEventListener("pointermove", (e) => {
     const y = (e.clientY / window.innerHeight - 0.5) * 2;
     gsap.to(mainPhoto, {x: x * 3, y: y * 3, duration: 0.3, ease: "power2.out"});
 });
+
+
+const airPlane = document.querySelector('.hero-section-right svg');
+airPlane.style.opacity = 0;
+gsap.from(airPlane, {x: 200, y: 200, delay: 0.5, duration: 1, ease: "power3.out", onStart: () => airPlane.style.opacity = 1});

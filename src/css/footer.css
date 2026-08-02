@@ -4,7 +4,7 @@
 .contacts-wrapper .small-icons {
     justify-content: space-between;
 
-    margin-top: 12px;
+    margin-top: 18px;
     /*gap: 16px;*/
     display: none;
     width: 470px;
@@ -41,9 +41,9 @@
     .contacts-wrapper {
         height: 120px;
     }
-
     .contacts-wrapper .small-icons {
         display: flex;
         max-width: 320px;
+        margin-top: 12px;
     }
 }

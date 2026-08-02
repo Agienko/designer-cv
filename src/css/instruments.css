@@ -85,10 +85,10 @@
 
     .instruments-list {
         max-width: 480px;
-        margin-top: 12px;
+        margin-top: 18px;
         justify-content: normal;
         flex-wrap: wrap;
-        gap: 16px;
+        gap: 12px;
     }
 
     .instruments-list p, .instruments-list a {
@@ -108,10 +108,10 @@
 
     .instruments-list {
         max-width: 320px;
-        margin-top: 8px;
+        margin-top: 12px;
         justify-content: normal;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 8px;
     }
 
     .instruments-list p, .instruments-list a {

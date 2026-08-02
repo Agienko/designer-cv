@@ -11,22 +11,32 @@
     letter-spacing: 0;
     text-align: center;
     z-index: 1;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 .primary:hover {
     color: #6B6055;
-}
-.primary:active {
 }
 
 .primary-yellow {
     background: #FFE77A;
 }
+.primary-yellow:active {
+    background: #EECD3A;
+    color: #1A1712;
+}
 .primary-pink {
     background: #FFDEE2;
 }
+.primary-pink:active  {
+    background: #D89099;
+    color: #1A1712;
+}
 .primary-green {
     background: #E0F29C;
+}
+.primary-green:active {
+    background: #A6BC54;
+    color: #1A1712;
 }
 
 .hero-section-button{

@@ -1,4 +1,6 @@
-
+.contacts-wrapper .instruments-list {
+    width: 920px;
+}
 .contacts-wrapper .small-icons {
     justify-content: space-between;
 
